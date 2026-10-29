@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="חנות מוצרים שימושיים וטרנדיים.">
+  <title>טרנדי — דברים שכיף לגלות</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">משלוחים ומדיניות החזרה יפורסמו לפני פתיחת המכירות</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="טרנדי - דף הבית">trendi<span>.</span></a>
+    <nav aria-label="ניווט ראשי">
+      <a href="#products">המוצרים</a>
+      <a href="#about">על החנות</a>
+      <a href="#faq">שאלות נפוצות</a>
+    </nav>
+    <button class="cart-button" id="cart-toggle" type="button">העגלה <span id="cart-count">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">דברים קטנים. שדרוג גדול.</p>
+        <h1>מוצאים את הדבר<br><span>שלא ידעתם שחסר לכם.</span></h1>
+        <p class="hero-description">מוצרים שימושיים, רעיונות חכמים וגאדג'טים שעושים את היום קצת יותר פשוט.</p>
+        <a class="primary-button" href="#products">לגלות את המוצרים</a>
+        <p class="demo-note">הדגמת אתר — המכירות עדיין לא פתוחות</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="hero-card"><span>NEW FINDS</span><div class="spark">✳</div><strong>הגילוי הבא<br>שלכם מתחיל כאן.</strong><small>בחירות חכמות ליום־יום</small></div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="יתרונות החנות">
+      <div><span>✦</span> בחירות שימושיות</div>
+      <div><span>↗</span> מוצרים שנבחרים בקפידה</div>
+      <div><span>♡</span> שירות בגובה העיניים</div>
+    </section>
+
+    <section class="products-section" id="products">
+      <div class="section-heading">
+        <div><p class="eyebrow">הקולקציה שלנו</p><h2>מה תגלו היום?</h2></div>
+        <p>אלה מוצרי דוגמה לצורך עיצוב ובדיקה.<br>עדיין לא ניתן לרכוש אותם.</p>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div><p class="eyebrow">הגישה שלנו</p><h2>פחות רעש.<br>יותר דברים שימושיים.</h2></div>
+      <p>אנחנו בונים חנות שמרכזת מוצרים מעניינים ושימושיים במקום אחד. לפני פתיחת המכירות נבדוק כל מוצר, את תנאי המשלוח, המחיר, האחריות וההחזרות — כדי שתדעו בדיוק מה אתם מקבלים.</p>
+    </section>
+
+    <section class="faq-section" id="faq">
+      <p class="eyebrow">שקיפות לפני הכול</p><h2>שאלות נפוצות</h2>
+      <details><summary>האם אפשר להזמין כרגע?</summary><p>לא. זהו אב־טיפוס בלבד. הזמנות ותשלומים עדיין אינם פעילים.</p></details>
+      <details><summary>אילו אמצעי תשלום יהיו זמינים?</summary><p>מתוכנן לבדוק אפשרות לתשלום ב-Bit ובהעברה בנקאית. אף אמצעי תשלום אינו מחובר כרגע.</p></details>
+      <details><summary>מתי המוצר יגיע?</summary><p>זמני משלוח יוצגו רק לאחר בחירת ספק ואימות זמני האספקה שלו.</p></details>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#">trendi<span>.</span></a><p>אב־טיפוס לחנות אונליין · אין לבצע תשלום באתר זה</p><small>© <span id="year"></span> trendi</small></footer>
+
+  <div class="cart-panel" id="cart-panel" hidden aria-live="polite">
+    <div class="cart-panel-header"><h2>העגלה שלך</h2><button id="cart-close" type="button" aria-label="סגירה">×</button></div>
+    <div id="cart-items"></div>
+    <p class="cart-total">סכום לדוגמה: <strong id="cart-total">₪0</strong></p>
+    <p class="cart-warning">העגלה היא הדגמה בלבד. אין כאן תשלום או הזמנה אמיתית.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
